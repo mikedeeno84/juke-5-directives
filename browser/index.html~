@@ -34,8 +34,8 @@
 	<script src="/js/directives/sidebar.js"></script>
 	<script src="/js/directives/music-controls.js"></script>
 	<script src="/js/directives/albumview.js"></script>
-	<script src="/js/directives/doubleclick.js"></script>
 	<script src="/js/directives/songtable.js"></script>
+	<script src="/js/directives/doubleclick.js"></script>
 </head>
 <body ng-app="juke">
 	<div id="main" class="container-fluid">

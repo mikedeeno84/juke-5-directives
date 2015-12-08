@@ -1,0 +1,11 @@
+app.directive('doubleClick', function() {
+		return {
+				restrict: 'A',
+				scope: {
+						uponDoubleClick: '&'
+				},
+				link: function(scope, element) {
+							  element.dblclick(scope.uponDoubleClick);
+				}
+		}
+});
