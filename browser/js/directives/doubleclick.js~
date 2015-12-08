@@ -2,10 +2,16 @@ app.directive('doubleClick', function() {
 		return {
 				restrict: 'A',
 				scope: {
-						uponDoubleClick: '&'
+						upon: '&',
+						song: '='
 				},
-				link: function(scope, element) {
-							  element.dblclick(scope.uponDoubleClick);
+				link: function(scope, element, attributes) {
+							  console.log(scope.upon);
+							  console.log(scope.song);
+							  element.on('dblclick', function() {
+									  console.log('actually triggered');
+									  scope.upon(scope.song);
+							 });
 				}
 		}
 });

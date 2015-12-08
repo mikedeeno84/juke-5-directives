@@ -20,7 +20,6 @@ app.factory('PlayerFactory', function ($rootScope) {
 	};
 
 	function load (song, songList) {
-			console.log(song, songList);
 		audio.src = song.audioUrl;
 		audio.load();
 		currentSong = song;
